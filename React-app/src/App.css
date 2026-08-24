@@ -1,0 +1,28 @@
+body.light{
+  background-color: #fff;
+  color: black;
+}
+body.dark{
+  color: white;
+  background-color: #333;
+}
+h1{
+  color: red;
+  font-size: 2rem;
+}
+nav{
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.link:hover{
+  color: red;
+  cursor: pointer;
+}
+.link:active{
+  color: blue;
+}
