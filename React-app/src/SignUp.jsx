@@ -12,7 +12,7 @@ function SignUp() {
     const onSignUp = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:2314/users/create", { name, email, password, });
+            await axios.post("https://fareed-b6lf.onrender.com/users/create", { name, email, password, });
            setName("");
             setEmail("");
             setPassword("");

@@ -18,7 +18,7 @@ function updateUser() {
         try {
             if (!name && !password && !role) return alert ("fill your credential");
             const token = localStorage.getItem("token");
-            const res = await axios.put(`http://localhost:2314/users/${id}`,{
+            const res = await axios.put(`https://fareed-b6lf.onrender.com/users/${id}`,{
                 name,
                 password,
                 role,

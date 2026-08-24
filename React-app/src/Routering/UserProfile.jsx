@@ -15,7 +15,7 @@ function UserProfile() {
     useEffect(() => {
         const getUser = async () => {
             const token = await localStorage.getItem("token");
-            const res = await axios.get(`http://localhost:2314/users/${id}`, {
+            const res = await axios.get(`https://fareed-b6lf.onrender.com/users/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -26,7 +26,7 @@ function UserProfile() {
     }, []);
 
     const deleteUser = async () => {
-        const res = await axios.delete(`http://localhost:2314/users/${id}`)
+        const res = await axios.delete(`https://fareed-b6lf.onrender.com/users/${id}`)
 
         navigate("/sign-up")
     }

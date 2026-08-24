@@ -14,7 +14,7 @@ export const UserProvider = ({children}) => {
 
     const getUsers = async (token) =>  {
         try {
-            const res = await axios.get(`http://localhost:2314/users`, {
+            const res = await axios.get(`https://fareed-b6lf.onrender.com/users`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -36,7 +36,7 @@ export const UserProvider = ({children}) => {
                 throw new Error("User Id not found in token");
             }
 
-            const res = await axios.get(`http://localhost:2314/users/${userID}`,{
+            const res = await axios.get(`https://fareed-b6lf.onrender.com/users/${userID}`,{
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

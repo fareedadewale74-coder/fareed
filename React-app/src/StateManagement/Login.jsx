@@ -14,7 +14,7 @@ function Login() {
     const logIn = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:2314/users/login", { name, email, password });
+            const res = await axios.post("https://fareed-b6lf.onrender.com/users/login", { name, email, password });
             const token = res.data;
             setEmail("");
             setPassword("");
